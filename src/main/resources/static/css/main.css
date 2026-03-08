@@ -19,7 +19,10 @@ body {
     color: #333;
     background-color: #f4f4f4;
     height: 100%;
-    background-image: url("/images/background2.jpg");
+    background-image: url("/images/background4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .clearfix:after {
@@ -39,7 +42,7 @@ body {
     border-width: 1px;
     border-style: solid;
     border-color: #9e9999b2;
-    text-align: center;
+    text-align: left;
     background-color: #333;
     color: white;
     border-radius: 5px;
@@ -59,6 +62,10 @@ body {
     border-radius: 5px;
 }
 
+
+
+
+
 .form-group {
     margin-bottom: 70px;
 }
@@ -74,7 +81,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 1.7em;
+    font-size: 3em;
+    color: white;
 }
 
 a {
@@ -103,13 +111,13 @@ button.default {
 }
 
 button.primary {
-    background-color: #5c05be;
+    background-color: #460793;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
     color: #fff;
 }
 
 button.accent {
-    background-color: #5b0a9e;
+    background-color: #460793;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
     color: #fff;
 }
@@ -119,7 +127,7 @@ button.accent {
 }
 
 .username-page-container {
-    background: #645e5e;
+    background: #494747;
     box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
     border-radius: 2px;
     width: 100%;
@@ -129,7 +137,6 @@ button.accent {
     display: inline-block;
     margin-top: 42px;
     vertical-align: middle;
-    position: relative;
     padding: 35px 55px 35px;
     min-height: 250px;
     position: absolute;
@@ -150,9 +157,12 @@ button.accent {
 #chat-page {
     position: relative;
     height: 100%;
+    vertical-align: center;
 }
 
 .chat-container {
+    scrollbar-color: rgb(156, 156, 156) transparent;
+    scrollbar-width: thin;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
@@ -162,6 +172,7 @@ button.accent {
     height: calc(100% - 60px);
     max-height: 800px;
     position: relative;
+    vertical-align: center;
 }
 
 #chat-page ul {
@@ -279,7 +290,8 @@ button.accent {
 
 @media screen and (max-width: 480px) {
     .chat-container {
-        height: calc(100% - 30px);
+        height: calc(100% - 100px);
+        width: calc(100% - 75px);
     }
 
     .username-page-container {
