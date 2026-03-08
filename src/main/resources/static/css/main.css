@@ -63,7 +63,23 @@ body {
 }
 
 
+.exit-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    background-color: #504c4c;
+    z-index: 1000;
+}
 
+.exit-button:hover{
+    opacity: 0.9;
+
+}
+
+.exit-button:active {
+    opacity: 0.7;
+}
 
 
 .form-group {
@@ -102,6 +118,14 @@ button {
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     min-height: 38px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active{
+    opacity: 0.4;
 }
 
 button.default {
@@ -277,6 +301,7 @@ button.accent {
     top: 65px;
     width: 100%;
 }
+
 
 
 @media screen and (max-width: 730px) {
